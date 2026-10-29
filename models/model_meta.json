@@ -1,0 +1,125 @@
+{
+ "best_classifier": "XGBClassifier",
+ "best_regressor": "XGBRegressor",
+ "results": {
+  "classification": [
+   {
+    "model": "LogisticRegression",
+    "accuracy": 0.88674,
+    "precision": 0.8655417748293434,
+    "recall": 0.8626802740644914,
+    "f1": 0.8641086554843663,
+    "roc_auc": 0.9607844235446472,
+    "train_seconds": 1.3684313297271729
+   },
+   {
+    "model": "RandomForestClassifier",
+    "accuracy": 0.96196,
+    "precision": 0.9546086373004841,
+    "recall": 0.9542427291457045,
+    "f1": 0.9544256481525855,
+    "roc_auc": 0.9949929892335351,
+    "train_seconds": 33.9991500377655
+   },
+   {
+    "model": "XGBClassifier",
+    "accuracy": 0.9942,
+    "precision": 0.9929580838323353,
+    "recall": 0.9931483877150112,
+    "f1": 0.9930532266564461,
+    "roc_auc": 0.9998445155215123,
+    "train_seconds": 11.332951068878174
+   }
+  ],
+  "regression": [
+   {
+    "model": "LinearRegression",
+    "rmse": 9.516240621839684,
+    "mae": 6.652741734321107,
+    "r2": 0.9981561599938614,
+    "mape": 0.046381580762065916,
+    "train_seconds": 1.7600560188293457
+   },
+   {
+    "model": "RandomForestRegressor",
+    "rmse": 6.470319654657518,
+    "mae": 4.6543917123519245,
+    "r2": 0.9991475991431844,
+    "mape": 0.012729236148393951,
+    "train_seconds": 434.9368312358856
+   },
+   {
+    "model": "XGBRegressor",
+    "rmse": 1.7356397299738875,
+    "mae": 1.351155801949563,
+    "r2": 0.9999386645480347,
+    "mape": 0.005407738203000204,
+    "train_seconds": 11.346622467041016
+   }
+  ]
+ },
+ "clf_importance": {
+  "Transport_Score": 0.12359999865293503,
+  "Public_Transport_Accessibility": 0.11230000108480453,
+  "PPSF_vs_City_Median": 0.11079999804496765,
+  "Availability_Status": 0.09549999982118607,
+  "Infra_Score": 0.09510000050067902,
+  "City": 0.07010000199079514,
+  "Property_Type": 0.049800001084804535,
+  "Nearby_Schools": 0.04650000110268593,
+  "Age_of_Property": 0.042399998754262924,
+  "Price_per_SqFt_Rs": 0.03660000115633011,
+  "Amenity_Count": 0.034299999475479126,
+  "State": 0.03319999948143959,
+  "Nearby_Hospitals": 0.029600000008940697,
+  "Furnished_Status": 0.028599999845027924,
+  "Has_Security": 0.024299999698996544,
+  "Parking": 0.018200000748038292,
+  "Has_Clubhouse": 0.006800000090152025,
+  "Facing": 0.00570000009611249,
+  "Price_in_Lakhs": 0.004999999888241291,
+  "Has_Garden": 0.004800000227987766,
+  "Owner_Type": 0.0038999998942017555,
+  "Has_Gym": 0.003800000064074993,
+  "Has_Pool": 0.003700000001117587,
+  "Size_in_SqFt": 0.0034000000450760126,
+  "Has_Playground": 0.0034000000450760126,
+  "School_Density_Score": 0.0027000000700354576,
+  "Floor_Ratio": 0.001500000013038516,
+  "Total_Floors": 0.00139999995008111,
+  "Floor_No": 0.00139999995008111,
+  "BHK": 0.00139999995008111
+ },
+ "reg_importance": {
+  "Price_in_Lakhs": 0.8019999861717224,
+  "Price_per_SqFt_Rs": 0.09309999644756317,
+  "PPSF_vs_City_Median": 0.03819999843835831,
+  "Size_in_SqFt": 0.01889999955892563,
+  "Availability_Status": 0.01489999983459711,
+  "Public_Transport_Accessibility": 0.009399999864399433,
+  "Transport_Score": 0.005499999970197678,
+  "Age_of_Property": 0.004399999976158142,
+  "Property_Type": 0.004399999976158142,
+  "Amenity_Count": 0.0034000000450760126,
+  "Has_Security": 0.0017999999690800905,
+  "Infra_Score": 0.001500000013038516,
+  "Furnished_Status": 0.0010999999940395355,
+  "Parking": 0.0010000000474974513,
+  "City": 9.999999747378752e-05,
+  "Nearby_Schools": 9.999999747378752e-05,
+  "Nearby_Hospitals": 9.999999747378752e-05,
+  "State": 9.999999747378752e-05,
+  "School_Density_Score": 0.0,
+  "Facing": 0.0,
+  "Owner_Type": 0.0,
+  "Has_Garden": 0.0,
+  "Has_Playground": 0.0,
+  "Has_Pool": 0.0,
+  "Has_Clubhouse": 0.0,
+  "Has_Gym": 0.0,
+  "Floor_Ratio": 0.0,
+  "Total_Floors": 0.0,
+  "Floor_No": 0.0,
+  "BHK": 0.0
+ }
+}
