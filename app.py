@@ -221,11 +221,11 @@ else:
     r = pd.DataFrame(meta["results"]["regression"]).set_index("model")
     st.subheader("Classification — Good Investment")
     st.dataframe(c.style.format({"train_seconds": "{:.0f}", **{k: "{:.4f}" for k in c.columns if k != "train_seconds"}})
-                 .highlight_max(subset=["accuracy", "f1", "roc_auc"], color="#d7efe3"), use_container_width=True)
+                 .highlight_max(subset=["accuracy", "f1", "roc_auc"], props="background-color: #1f7a4d; color: #ffffff; font-weight: 600;"), use_container_width=True)
     st.subheader("Regression — price after 5 years (₹ lakhs)")
     st.dataframe(r.style.format({"rmse": "{:.3f}", "mae": "{:.3f}", "r2": "{:.5f}", "mape": "{:.2%}",
                                  "train_seconds": "{:.0f}"})
-                 .highlight_min(subset=["rmse", "mae"], color="#d7efe3"), use_container_width=True)
+                 .highlight_min(subset=["rmse", "mae"], props="background-color: #1f7a4d; color: #ffffff; font-weight: 600;"), use_container_width=True)
 
     figdir = ROOT / "reports" / "figures" / "models"
     best_c, best_r = meta["best_classifier"], meta["best_regressor"]

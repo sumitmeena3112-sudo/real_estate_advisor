@@ -1,6 +1,8 @@
 # 🏠 Real Estate Investment Advisor
 ### Predicting property profitability and 5-year future value
 
+**🚀 Live app: [https://realestateadvisor-vga53jpujrkqvfsxy2xt9d.streamlit.app/](https://realestateadvisor-vga53jpujrkqvfsxy2xt9d.streamlit.app/)**
+
 A machine-learning application that helps investors evaluate residential property in India. For any property it answers two questions:
 
 1. **Is this a Good Investment?** — binary classification
@@ -206,7 +208,13 @@ This gives 41.7% positives, a reasonably balanced target. The models are not giv
 - **Fixed growth assumptions.** The 8% base rate and adjustments are assumptions; they could be calibrated against RBI/NHB housing price indices by city.
 - **Next steps:** hyperparameter tuning logged in MLflow, SHAP explanations per prediction, and real data from listing portals.
 
-## Deploying to Streamlit Community Cloud
+## Deployment
+
+The app is deployed on Streamlit Community Cloud: **https://realestateadvisor-vga53jpujrkqvfsxy2xt9d.streamlit.app/**
+
+**Keeping it awake.** Free Community Cloud apps go to sleep after 12 hours without visitors. A GitHub Actions workflow ([`.github/workflows/keep_alive.yml`](.github/workflows/keep_alive.yml)) opens the app in a headless browser every 3 hours and clicks the wake-up button if it ever finds the app asleep. It can also be run by hand from the repo's **Actions** tab.
+
+### Deploying your own copy
 
 1. Push the project to GitHub. `.gitignore` excludes `data/processed/` and `mlartifacts/`, which are too large.
 2. On share.streamlit.io, choose the repo and set the main file to `app.py`.
